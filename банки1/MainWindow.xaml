@@ -16,7 +16,7 @@
         <TextBox x:Name="textBoxCVC" HorizontalAlignment="Left" Height="23" Margin="30,219,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="71"/>
         <Label x:Name="label3" Content="Введите имя держателя карты&#xD;&#xA;" HorizontalAlignment="Left" Margin="30,254,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="textBoxName" HorizontalAlignment="Left" Height="23" Margin="30,296,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="173"/>
-        <ListBox x:Name="listBoxCards" HorizontalAlignment="Left" Height="230" Margin="234,37,0,0" VerticalAlignment="Top" Width="484" SelectionChanged="listBoxCards_SelectionChanged"/>
+        <ListBox x:Name="listBoxCards" HorizontalAlignment="Left" Height="230" Margin="238,37,0,0" VerticalAlignment="Top" Width="479" SelectionChanged="listBoxCards_SelectionChanged"/>
         <Button x:Name="buttonAdd" Content="Добавить" HorizontalAlignment="Left" Margin="289,284,0,0" VerticalAlignment="Top" Width="110" Height="47" Click="buttonAdd_Click"/>
         <Button x:Name="buttonDelete" Content="Удалить" HorizontalAlignment="Left" Margin="531,284,0,0" Width="111" Height="47" VerticalAlignment="Top" Click="buttonDelete_Click"/>
 
