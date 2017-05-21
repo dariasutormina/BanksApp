@@ -13,45 +13,45 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.Xml.Serialization;
-
 
 namespace BankDataBase
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for MainPage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainPage : Page
     {
-       
-        public MainWindow()
+        List<Person> _people = new List<Person>();
+       /* public MainPage()
         {
             InitializeComponent();
-            frameMain.Navigate(new LoginPage());
-
-
             using (SQLiteConnection connection = new SQLiteConnection("Data source=people.db"))
             {
                 connection.Open();
-
                 try
                 {
-                    CreateTables(connection);
+                    SQLiteCommand cmd = new SQLiteCommand("SELECT * FROM people", connection);
+                    var reader = cmd.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        listboxPeople.Items.Add($"id = {reader["id"]}, surname = {reader["surname"]});
+                        }
                 }
                 catch
-                { }
+                {
 
-
+                }
             }
-        }
-        static void CreateTables(SQLiteConnection connection)
+        }*/
+        public void NewPersonAdded(Person person )
         {
-
-            SQLiteCommand cmd = new SQLiteCommand("CREATE TABLE people (id integer primary key, surname varchar(100), name varchar(100), login varchar(100), password varchar(100), year int, month int, day int)", connection);
-            cmd.ExecuteNonQuery();
+            _people.Add(person);
+            listBoxPeople.ItemsSource = null;
+            listBoxPeople.Items.Add(person.SHOW(person));
         }
-
-      
-
     }
 }
+        
+
+           
+

@@ -1,0 +1,29 @@
+﻿<Page x:Class="BankDataBase.RegistrationPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:BankDataBase"
+      mc:Ignorable="d"
+      Title="RegistrationPage" Height="388.074" Width="328.899">
+
+    <Grid x:Name="RegistrationPage1">
+        <TextBox x:Name="textBoxSurname" HorizontalAlignment="Left" Height="23" Margin="23,28,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBoxName" HorizontalAlignment="Left" Height="23" Margin="23,82,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label" Content="Фамилия" HorizontalAlignment="Left" Margin="23,0,0,0" VerticalAlignment="Top" Width="133"/>
+        <Label x:Name="label1" Content="Имя" HorizontalAlignment="Left" Margin="23,51,0,0" VerticalAlignment="Top" Width="133"/>
+        <TextBox x:Name="textBoxLogin" HorizontalAlignment="Left" Height="23" Margin="23,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label2" Content="Логин" HorizontalAlignment="Left" Margin="23,109,0,0" VerticalAlignment="Top" Width="109"/>
+        <Label x:Name="label3" Content="Пароль" HorizontalAlignment="Left" Margin="23,168,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label4" Content="Дата рождения:" HorizontalAlignment="Left" Margin="23,227,0,0" VerticalAlignment="Top" Width="133"/>
+        <TextBox x:Name="textBoxDayOfBirth" HorizontalAlignment="Left" Height="23" Margin="23,282,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="59"/>
+        <TextBox x:Name="textBoxMonthOfBirth" HorizontalAlignment="Left" Height="23" Margin="110,282,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="64"/>
+        <TextBox x:Name="textBoxYearOfBirth" HorizontalAlignment="Left" Height="23" Margin="196,282,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="70"/>
+        <Label x:Name="label5" Content="День" HorizontalAlignment="Left" Margin="23,251,0,0" VerticalAlignment="Top" Width="81"/>
+        <Label x:Name="label6" Content="Месяц" HorizontalAlignment="Left" Margin="110,251,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label7" Content="Год" HorizontalAlignment="Left" Margin="202,251,0,0" VerticalAlignment="Top" Width="64"/>
+        <Button x:Name="buttonAddPerson" Content="Добавить" HorizontalAlignment="Left" Margin="46,323,0,0" VerticalAlignment="Top" Width="220" Click="buttonAddPerson_Click" Height="34"/>
+        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="23,199,0,0" VerticalAlignment="Top" Width="120" Height="23"/>
+
+    </Grid>
+</Page>

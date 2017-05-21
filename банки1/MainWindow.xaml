@@ -1,24 +1,12 @@
-﻿<Window x:Class="банки1.MainWindow"
+﻿<Window x:Class="BankDataBase.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:банки1"
+        xmlns:local="clr-namespace:BankDataBase"
         mc:Ignorable="d"
         Title="MainWindow" Height="381.687" Width="748.251">
-    <Grid>
-        <Label x:Name="label" Content="Введите номер карты&#xD;&#xA;" HorizontalAlignment="Left" Margin="30,25,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="textBoxNumber" HorizontalAlignment="Left" Height="23" Margin="30,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="182"/>
-        <Label x:Name="label1" Content="Введите срок действия карты&#xD;&#xA;" HorizontalAlignment="Left" Margin="30,107,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="textBoxMonth" HorizontalAlignment="Left" Height="23" Margin="30,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="55"/>
-        <TextBox x:Name="textBoxYear" HorizontalAlignment="Left" Height="23" Margin="127,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="57"/>
-        <Label x:Name="label2" Content="Введите CVC&#xD;&#xA;" HorizontalAlignment="Left" Margin="30,177,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="textBoxCVC" HorizontalAlignment="Left" Height="23" Margin="30,219,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="71"/>
-        <Label x:Name="label3" Content="Введите имя держателя карты&#xD;&#xA;" HorizontalAlignment="Left" Margin="30,254,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="textBoxName" HorizontalAlignment="Left" Height="23" Margin="30,296,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="173"/>
-        <ListBox x:Name="listBoxCards" HorizontalAlignment="Left" Height="230" Margin="238,37,0,0" VerticalAlignment="Top" Width="479" SelectionChanged="listBoxCards_SelectionChanged"/>
-        <Button x:Name="buttonAdd" Content="Добавить" HorizontalAlignment="Left" Margin="289,284,0,0" VerticalAlignment="Top" Width="110" Height="47" Click="buttonAdd_Click"/>
-        <Button x:Name="buttonDelete" Content="Удалить" HorizontalAlignment="Left" Margin="531,284,0,0" Width="111" Height="47" VerticalAlignment="Top" Click="buttonDelete_Click"/>
-
-    </Grid>
+    <Frame x:Name="frameMain" NavigationUIVisibility="Hidden"/>
 </Window>
+    
+ 

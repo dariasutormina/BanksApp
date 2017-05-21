@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Controls;
 
 namespace банки1
 {
@@ -13,5 +14,8 @@ namespace банки1
     /// </summary>
     public partial class App : Application
     {
+
     }
+    
 }
+    
